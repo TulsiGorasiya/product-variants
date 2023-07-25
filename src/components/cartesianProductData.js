@@ -138,8 +138,9 @@ function CartesianProductData() {
           </button>
         </div>
       </div>
+
       <div className="flex justify-center">
-        <div className="border border-solid border-black p-5 w-auto">
+        <div className=" p-5 w-auto">
           {attribute.map((att, index) => (
             <div key={index} className="">
               <div>
@@ -166,7 +167,7 @@ function CartesianProductData() {
               </div>
             </div>
           ))}
-          <div className="">
+          <div>
             <button
               className="p-2 border border-solid bg-gray-200 rounded-lg mt-10"
               onClick={() => createVariant(matrix)}
@@ -175,7 +176,7 @@ function CartesianProductData() {
             </button>
           </div>
         </div>
-        <div className="border border-solid border-black p-5 w-auto mx-10">
+        <div className=" p-5 w-auto mx-10">
           {varinat.map((element, index) => {
             return (
               <div key={index} className="flex">
